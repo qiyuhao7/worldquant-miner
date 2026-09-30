@@ -33,4 +33,12 @@
 - `if_else` + `<` 比较在 FASTEXPR 可用！
 - `if_else(divide(volume, adv20) < 0.5, reverse(ts_rank(returns, 20)), ts_rank(divide(ts_mean(cashflow_op, 20), enterprise_value), 60))` → 2.14/1.28，自相关 PASS。
 - 待扫：阈值 0.3/0.7/1.0；门控换波动率（ts_std_dev(returns,N) 分位）；门控换价值腿（缩量时切价值、放量时切反转的双向门）。
-- CrisperX-50 的高 decay（65-80）只适合单 rank 慢信号，我方组合用高 decay 会死（1.13），别套用。
+## 新增：学术/官方 Learn（2026-09-30）
+
+- 官方 Learn-104 日内反转 `-group_rank(close-open, subindustry)` decay 10：我方复现 1.82/0.84（WjeMARZP）；+价值腿组合 2.09/1.15（RR6MVQQa，自相关 0.92 FAIL 被退）。
+- 官方基本面例（cashflow/marketcap 改善）= 我方冠军家族的理论出处；`ts_zscore(divide(cashflow_op,cap),60)` 得 1.14，不如 ts_rank+EV 版。
+- Sloan 应计异象 `reverse(rank(divide(ebit-cashflow_op, assets)))`：0.29，死。
+- Cooper 资产增长 `reverse(rank(divide(ts_delta(assets,252), assets)))`：0.21，死。
+- 投资因子 `reverse(rank(divide(capex, assets)))`：-0.68（取反也只有 +0.68 水平，不值得）。
+- 波动率门控 `if_else(rank(ts_std(returns,20))>0.5, 反转腿, 价值腿)`：0.46，弱（`>` 可用，但此构造不行；缩量 `<` 门控才有效）。
+- Quantpedia 方异常库 + global-q 201 异常清单可作点子来源，但上述核心几个已证伪，优先级放低。
