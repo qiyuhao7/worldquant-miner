@@ -41,4 +41,8 @@
 - Cooper 资产增长 `reverse(rank(divide(ts_delta(assets,252), assets)))`：0.21，死。
 - 投资因子 `reverse(rank(divide(capex, assets)))`：-0.68（取反也只有 +0.68 水平，不值得）。
 - 波动率门控 `if_else(rank(ts_std(returns,20))>0.5, 反转腿, 价值腿)`：0.46，弱（`>` 可用，但此构造不行；缩量 `<` 门控才有效）。
-- Quantpedia 方异常库 + global-q 201 异常清单可作点子来源，但上述核心几个已证伪，优先级放低。
+## 新增：FMZ 论坛 CTA 改编（2026-09-30）
+
+- 海龟/Dual Thrust 直接改编弱（Donchian 多头 -0.88， proximity to high -0.57），但取反就是信号。
+- `reverse(group_zscore(ts_rank(returns, 20), subindustry))` → 2.03/0.91（换手过高）；+价值腿组合 → **2.51/1.37（6XK7JGjK，历史最高，但自相关 0.84 被退）**。
+- FMZ 81 帖多为 CTA/网格/ETF 择时（fmz_body_llm.json：4 worth_backtest），截面因子少，优先级低于 Alpha101/学术。

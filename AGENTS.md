@@ -9,6 +9,10 @@ WorldQuant Brain alpha 因子挖掘工具集。AI agent 在此仓库工作时遵
 - `generation_one/` / `stone_age/` / `mini-quant/` — 早期单脚本矿工（`alpha_expression_miner.py --expression` 可直接回测手写表达式，无需 LLM）。
 - `credential.example.txt` — 凭证格式说明。真凭证 `credential.txt` / `generation_two/credential.txt` 内容为 `["邮箱","密码"]`。
 
+## 关联工程（ sibling ）
+
+- `~/quant/quant-trading-system` — A 股/ETF 实盘与因子研究系统（Qlib Alpha101/158/191 公式库在 `src/alphalib/`；聚宽/米筐/果仁/FMZ 论坛帖挖掘在 `research/` + `data/probes/`，结论沉淀 `docs/factors.md`）。WQ 因子灵感来源之一：Alpha101 公式可直转 FASTEXPR（禁 `ts_max/ts_min/delay`），论坛 idea 蒸馏进 `autopilot/seeds_forum.md` 再喂给 miner prompt。
+
 ## autopilot 子系统（重点）
 
 - `miner_loop.py` — 主循环：muse-spark（经本地 OCG 网关 `http://127.0.0.1:9042/v1`，OpenAI 兼容）生成 FASTEXPR → WorldQuant `/simulations` 回测 → 全过线自动提交。`--hours 0` = 无限跑。
