@@ -92,6 +92,20 @@ def log_sim(rec):
         rec.get('fitness'), rec.get('returns'), rec.get('turnover'),
         rec.get('message'), rec.get('submit'), rec.get('self_corr')))
     con.commit()
+    rowid = con.execute('SELECT last_insert_rowid()').fetchone()[0]
+    con.close()
+    return rowid
+
+
+def update_sim(rowid, rec):
+    con = db()
+    con.execute("""UPDATE sims SET ts=?,status=?,alpha=?,sharpe=?,fitness=?,
+        returns=?,turnover=?,message=?,submit=?,self_corr=? WHERE id=?""", (
+        time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), rec.get('status'),
+        rec.get('alpha'), rec.get('sharpe'), rec.get('fitness'),
+        rec.get('returns'), rec.get('turnover'), rec.get('message'),
+        rec.get('submit'), rec.get('self_corr'), rowid))
+    con.commit()
     con.close()
 
 
@@ -230,6 +244,7 @@ def gen_batch(history, submitted, temperature=0.85):
 BEST SO FAR: {best['expr'] + ' sharpe ' + str(best['sharpe']) if best else 'none'}
 ALREADY SUBMITTED (must be LOW-correlation vs these, self-corr limit 0.7):
 {sub_txt if submitted else 'none yet'}
+SELF-CORR LESSON: rank-preserving transforms (quantile/group_rank/SUBINDUSTRY-neut of the SAME signal) keep self-corr ~0.97-0.99 and FAIL. Only genuinely DIFFERENT signals (different families/fields) can pass alongside submitted. Combos sharing the value leg still fail (~0.73+).
 STRONG NEGATIVES TO FLIP:
 {neg_txt if negs else 'none yet'}
 FITNESS: needs >1.0, rewards lower turnover/higher margin. Prefer decay 1-10, smoother windows.
@@ -404,13 +419,20 @@ def main():
                 print('TIME BUDGET EXHAUSTED mid-batch, clean exit', flush=True)
                 return 10
             print('SUBMIT:', item, flush=True)
+            # crash-safe: pending row first, updated on completion
+            pending = {'expr': item['expr'] if isinstance(item, dict) else item,
+                       'decay': item.get('decay', 0) if isinstance(item, dict) else 0,
+                       'neut': item.get('neut', 'INDUSTRY') if isinstance(item, dict) else 'INDUSTRY',
+                       'region': 'USA', 'universe': 'TOP3000',
+                       'status': 'SUBMITTED', 'message': 'in-flight'}
+            rowid = log_sim(pending)
             rec = sim_one(s, item)
             if rec.get('status') in ('RATE_LIMITED', 'SUBMIT_EXC', 'AUTH_FAIL'):
                 fails = kv_get(con, 'consec_fail', 0) + 1
                 kv_set(con, 'consec_fail', fails)
                 wait = min(3600, 300 * fails)
                 print(f"{rec['status']}, consec={fails}, sleep {wait}s", flush=True)
-                log_sim(rec)
+                update_sim(rowid, rec)
                 heartbeat(get_history(), kv_get(con, 'submitted', []),
                           deadline, f"{rec['status']} cooldown")
                 time.sleep(wait)
@@ -425,7 +447,7 @@ def main():
                 rec = try_submit(s, con, rec, args.max_submits)
                 print('SUBMIT-CHECK:', rec.get('submit', 'skipped'), flush=True)
             print('RESULT:', json.dumps(rec)[:400], flush=True)
-            log_sim(rec)
+            update_sim(rowid, rec)
             day = time.strftime('%Y-%m-%d', time.gmtime())
             sims = kv_get(con, 'sims_by_day', {})
             sims[day] = sims.get(day, 0) + 1
