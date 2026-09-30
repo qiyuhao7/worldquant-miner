@@ -27,3 +27,10 @@
 - `trade_when(signal, volume_spike, 1)` 条件暴露（未试过）。
 - `bucket(rank(x), range="0,1,0.1")` 分桶（未试过）。
 - Magic Formula 原教旨：`add(rank(ebit/EV), rank(ebitda/assets))` 只有 0.18——说明单调加权不行，要换非线性合成（ts_rank 外包、quantile 外包）。
+
+## 新增：条件门控家族（2026-09-30，果仁反转帖启发，已提交 d51pRJNx）
+
+- `if_else` + `<` 比较在 FASTEXPR 可用！
+- `if_else(divide(volume, adv20) < 0.5, reverse(ts_rank(returns, 20)), ts_rank(divide(ts_mean(cashflow_op, 20), enterprise_value), 60))` → 2.14/1.28，自相关 PASS。
+- 待扫：阈值 0.3/0.7/1.0；门控换波动率（ts_std_dev(returns,N) 分位）；门控换价值腿（缩量时切价值、放量时切反转的双向门）。
+- CrisperX-50 的高 decay（65-80）只适合单 rank 慢信号，我方组合用高 decay 会死（1.13），别套用。
