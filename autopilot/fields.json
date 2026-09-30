@@ -1,0 +1,1046 @@
+{
+ "assets": {
+  "id": "assets",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Assets - Total"
+ },
+ "assets_curr": {
+  "id": "assets_curr",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Current Assets - Total"
+ },
+ "bookvalue_ps": {
+  "id": "bookvalue_ps",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Book Value Per Share"
+ },
+ "capex": {
+  "id": "capex",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Capital Expenditures"
+ },
+ "cash": {
+  "id": "cash",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Cash"
+ },
+ "cash_st": {
+  "id": "cash_st",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Cash and Short-Term Investments"
+ },
+ "cashflow": {
+  "id": "cashflow",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Cashflow (Annual)"
+ },
+ "cashflow_dividends": {
+  "id": "cashflow_dividends",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Cash Dividends (Cash Flow)"
+ },
+ "cashflow_fin": {
+  "id": "cashflow_fin",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Financing Activities - Net Cash Flow"
+ },
+ "cashflow_invst": {
+  "id": "cashflow_invst",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Investing Activities - Net Cash Flow"
+ },
+ "cashflow_op": {
+  "id": "cashflow_op",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Operating Activities - Net Cash Flow"
+ },
+ "cogs": {
+  "id": "cogs",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Cost of Goods Sold"
+ },
+ "current_ratio": {
+  "id": "current_ratio",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Current Ratio"
+ },
+ "debt": {
+  "id": "debt",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Debt"
+ },
+ "debt_lt": {
+  "id": "debt_lt",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Long-Term Debt - Total"
+ },
+ "debt_st": {
+  "id": "debt_st",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Debt in Current Liabilities"
+ },
+ "depre_amort": {
+  "id": "depre_amort",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Depreciation and Amortization - Total"
+ },
+ "ebit": {
+  "id": "ebit",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Earnings Before Interest and Taxes"
+ },
+ "ebitda": {
+  "id": "ebitda",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Earnings Before Interest"
+ },
+ "employee": {
+  "id": "employee",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Employees"
+ },
+ "enterprise_value": {
+  "id": "enterprise_value",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Enterprise Value"
+ },
+ "eps": {
+  "id": "eps",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Earnings Per Share (Basic) - Including Extraordinary Items"
+ },
+ "equity": {
+  "id": "equity",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Common/Ordinary Equity - Total"
+ },
+ "fnd6_acdo": {
+  "id": "fnd6_acdo",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Current Assets of Discontinued Operations"
+ },
+ "fnd6_acodo": {
+  "id": "fnd6_acodo",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Other Current Assets Excl Discontinued Operations"
+ },
+ "fnd6_acox": {
+  "id": "fnd6_acox",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Current Assets - Other - Sundry"
+ },
+ "fnd6_acqgdwl": {
+  "id": "fnd6_acqgdwl",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Acquired Assets - Goodwill"
+ },
+ "fnd6_acqintan": {
+  "id": "fnd6_acqintan",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Acquired Assets - Intangibles"
+ },
+ "fnd6_adesinda_curcd": {
+  "id": "fnd6_adesinda_curcd",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "ISO Currency Code - Company Annual Market"
+ },
+ "fnd6_aldo": {
+  "id": "fnd6_aldo",
+  "type": "MATRIX",
+  "dataset": "fundamental6",
+  "desc": "Long-term Assets of Discontinued Operations"
+ },
+ "actual_cashflow_per_share_value_quarterly": {
+  "id": "actual_cashflow_per_share_value_quarterly",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Cash Flow Per Share - actual value for the quarter"
+ },
+ "actual_dividend_value_quarterly": {
+  "id": "actual_dividend_value_quarterly",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Dividend - Actual value for the quarter"
+ },
+ "actual_eps_value_quarterly": {
+  "id": "actual_eps_value_quarterly",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Earnings Per Share (Income Statement/Per Share) (Actual)"
+ },
+ "actual_sales_value_annual": {
+  "id": "actual_sales_value_annual",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Sales - Actual Value"
+ },
+ "actual_sales_value_quarterly": {
+  "id": "actual_sales_value_quarterly",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Sales - Value in financial services income statement (in millions)"
+ },
+ "actuals_reporting_currency": {
+  "id": "actuals_reporting_currency",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Home currency of instrument"
+ },
+ "actuals_value_currency_code": {
+  "id": "actuals_value_currency_code",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Pricing Currency where the security trades"
+ },
+ "adj_net_income_avg": {
+  "id": "adj_net_income_avg",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Average adjusted net profit, excluding non-recurring items, for the period."
+ },
+ "adj_net_income_median": {
+  "id": "adj_net_income_median",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Median adjusted net profit, excluding non-recurring items, for the period."
+ },
+ "adj_net_income_stddev": {
+  "id": "adj_net_income_stddev",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Standard deviation of adjusted net profit estimates, excluding non-recurring ite"
+ },
+ "anl4_adjusted_netincome_ft": {
+  "id": "anl4_adjusted_netincome_ft",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Adjusted net income - forecast type (revision/new/...)"
+ },
+ "anl4_ads1detailafv110_bk": {
+  "id": "anl4_ads1detailafv110_bk",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Broker name (int)"
+ },
+ "anl4_ads1detailafv110_estvalue": {
+  "id": "anl4_ads1detailafv110_estvalue",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Estimation value"
+ },
+ "anl4_ads1detailafv110_person": {
+  "id": "anl4_ads1detailafv110_person",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Broker Id"
+ },
+ "anl4_ads1detailafv110_prevval": {
+  "id": "anl4_ads1detailafv110_prevval",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The Previous Estimation of Financial Item"
+ },
+ "anl4_ads1detailqfv110_bk": {
+  "id": "anl4_ads1detailqfv110_bk",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Broker name (int)"
+ },
+ "anl4_ads1detailqfv110_estvalue": {
+  "id": "anl4_ads1detailqfv110_estvalue",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Estimation value"
+ },
+ "anl4_ads1detailqfv110_person": {
+  "id": "anl4_ads1detailqfv110_person",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Broker Id"
+ },
+ "anl4_ads1detailqfv110_prevval": {
+  "id": "anl4_ads1detailqfv110_prevval",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The previous estimation of financial item"
+ },
+ "anl4_adxqfv110_down": {
+  "id": "anl4_adxqfv110_down",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Number of lower estimations"
+ },
+ "anl4_adxqfv110_high": {
+  "id": "anl4_adxqfv110_high",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The highest estimation"
+ },
+ "anl4_adxqfv110_low": {
+  "id": "anl4_adxqfv110_low",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The lowest estimation"
+ },
+ "anl4_adxqfv110_mean": {
+  "id": "anl4_adxqfv110_mean",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Mean of estimations"
+ },
+ "anl4_adxqfv110_median": {
+  "id": "anl4_adxqfv110_median",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Median of estimations"
+ },
+ "anl4_adxqfv110_numest": {
+  "id": "anl4_adxqfv110_numest",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The number of forecasts counted in aggregation"
+ },
+ "anl4_adxqfv110_pu": {
+  "id": "anl4_adxqfv110_pu",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The number of upper estimations"
+ },
+ "anl4_ady_down": {
+  "id": "anl4_ady_down",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Number of lower estimations"
+ },
+ "anl4_ady_high": {
+  "id": "anl4_ady_high",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The highest estimation"
+ },
+ "anl4_ady_low": {
+  "id": "anl4_ady_low",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The lowest estimation"
+ },
+ "anl4_ady_mean": {
+  "id": "anl4_ady_mean",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Mean of estimations"
+ },
+ "analyst_revision_rank_derivative": {
+  "id": "analyst_revision_rank_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Daily-indicator variant of momentum capturing recent price moves and analyst est"
+ },
+ "cashflow_efficiency_rank_derivative": {
+  "id": "cashflow_efficiency_rank_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Ranks stocks by their ability to generate cash flows and operational profitabili"
+ },
+ "composite_factor_score_derivative": {
+  "id": "composite_factor_score_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Momentum score based on analyst revisions; intraday variant"
+ },
+ "earnings_certainty_rank_derivative": {
+  "id": "earnings_certainty_rank_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Measures the sustainability and certainty of earnings quality"
+ },
+ "fscore_bfl_growth": {
+  "id": "fscore_bfl_growth",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Growth composite estimating expected medium-term growth potential (e.g., revenue"
+ },
+ "fscore_bfl_momentum": {
+  "id": "fscore_bfl_momentum",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite momentum measure reflecting recent price dynamics and analyst estimate"
+ },
+ "fscore_bfl_profitability": {
+  "id": "fscore_bfl_profitability",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Profitability composite ranking firms by ability to generate cash flows and oper"
+ },
+ "fscore_bfl_quality": {
+  "id": "fscore_bfl_quality",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite measuring earnings quality, stability, and balance-sheet resilience"
+ },
+ "fscore_bfl_surface": {
+  "id": "fscore_bfl_surface",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Static composite \u201cstyle surface\u201d score aggregating the five primary style scores"
+ },
+ "fscore_bfl_surface_accel": {
+  "id": "fscore_bfl_surface_accel",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Acceleration (derivative) of the pentagon surface score relative to the previous"
+ },
+ "fscore_bfl_total": {
+  "id": "fscore_bfl_total",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Blended composite M-Score combining the static pentagon surface score and its ac"
+ },
+ "fscore_bfl_value": {
+  "id": "fscore_bfl_value",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Valuation composite indicating how under- or overpriced a stock is versus common"
+ },
+ "fscore_growth": {
+  "id": "fscore_growth",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite measuring the stock\u2019s expected medium-term growth potential"
+ },
+ "fscore_momentum": {
+  "id": "fscore_momentum",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite momentum metric focused on recent analyst estimate revisions to identi"
+ },
+ "fscore_profitability": {
+  "id": "fscore_profitability",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite ranking stocks by their ability to generate cash flows and operational"
+ },
+ "fscore_quality": {
+  "id": "fscore_quality",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite measuring the sustainability and certainty of earnings"
+ },
+ "fscore_surface": {
+  "id": "fscore_surface",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Static overall \u201cstyle surface\u201d score combining Value, Growth, Profitability, Mom"
+ },
+ "fscore_surface_accel": {
+  "id": "fscore_surface_accel",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Acceleration (derivative) of the pentagon surface score, indicating whether the "
+ },
+ "fscore_total": {
+  "id": "fscore_total",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Final blended score that combines the static pentagon surface score with its acc"
+ },
+ "fscore_value": {
+  "id": "fscore_value",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite assessing whether the stock is under- or overpriced using standard val"
+ },
+ "growth_potential_rank_derivative": {
+  "id": "growth_potential_rank_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Composite growth score qualifying the stock\u2019s expected medium\u2011term growth potent"
+ },
+ "multi_factor_acceleration_score_derivative": {
+  "id": "multi_factor_acceleration_score_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Change in the acceleration of multi-factor score compared to previous period."
+ },
+ "multi_factor_static_score_derivative": {
+  "id": "multi_factor_static_score_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Change in static multi-factor score compared to previous period."
+ },
+ "relative_valuation_rank_derivative": {
+  "id": "relative_valuation_rank_derivative",
+  "type": "MATRIX",
+  "dataset": "model16",
+  "desc": "Assesses whether the stock is under or overpriced based on standard valuation mu"
+ },
+ "adjfactor": {
+  "id": "adjfactor",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Adjustment factor applied to historical prices and dividends to account for spli"
+ },
+ "adv20": {
+  "id": "adv20",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Average daily volume in past 20 days"
+ },
+ "cap": {
+  "id": "cap",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily market capitalization (in millions)"
+ },
+ "close": {
+  "id": "close",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily close price"
+ },
+ "country": {
+  "id": "country",
+  "type": "GROUP",
+  "dataset": "pv1",
+  "desc": "Country grouping"
+ },
+ "currency": {
+  "id": "currency",
+  "type": "GROUP",
+  "dataset": "pv1",
+  "desc": "Currency"
+ },
+ "cusip": {
+  "id": "cusip",
+  "type": "SYMBOL",
+  "dataset": "pv1",
+  "desc": "CUSIP Value"
+ },
+ "dividend": {
+  "id": "dividend",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Dividend"
+ },
+ "exchange": {
+  "id": "exchange",
+  "type": "GROUP",
+  "dataset": "pv1",
+  "desc": "Exchange grouping"
+ },
+ "high": {
+  "id": "high",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily high price"
+ },
+ "industry": {
+  "id": "industry",
+  "type": "GROUP",
+  "dataset": "pv1",
+  "desc": "Industry grouping"
+ },
+ "isin": {
+  "id": "isin",
+  "type": "SYMBOL",
+  "dataset": "pv1",
+  "desc": "ISIN Value"
+ },
+ "low": {
+  "id": "low",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily low price"
+ },
+ "market": {
+  "id": "market",
+  "type": "GROUP",
+  "dataset": "pv1",
+  "desc": "Market grouping"
+ },
+ "open": {
+  "id": "open",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily open price"
+ },
+ "returns": {
+  "id": "returns",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily returns"
+ },
+ "sector": {
+  "id": "sector",
+  "type": "GROUP",
+  "dataset": "pv1",
+  "desc": "Sector grouping"
+ },
+ "sedol": {
+  "id": "sedol",
+  "type": "SYMBOL",
+  "dataset": "pv1",
+  "desc": "Sedol"
+ },
+ "sharesout": {
+  "id": "sharesout",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily outstanding shares (in millions)"
+ },
+ "split": {
+  "id": "split",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Stock split ratio"
+ },
+ "subindustry": {
+  "id": "subindustry",
+  "type": "GROUP",
+  "dataset": "pv1",
+  "desc": "Subindustry grouping"
+ },
+ "ticker": {
+  "id": "ticker",
+  "type": "SYMBOL",
+  "dataset": "pv1",
+  "desc": "Ticker"
+ },
+ "volume": {
+  "id": "volume",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily volume"
+ },
+ "vwap": {
+  "id": "vwap",
+  "type": "MATRIX",
+  "dataset": "pv1",
+  "desc": "Daily volume weighted average price"
+ },
+ "actual_earnings_per_share_2": {
+  "id": "actual_earnings_per_share_2",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Actual earnings per share value reported in the news"
+ },
+ "actual_earnings_per_share_3": {
+  "id": "actual_earnings_per_share_3",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Actual Earnings Per Share value conveyed by the news release"
+ },
+ "actual_earnings_per_share_4": {
+  "id": "actual_earnings_per_share_4",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Actual Earnings Per Share reported for day 1 in 'All Filter' module"
+ },
+ "actual_earnings_per_share_value": {
+  "id": "actual_earnings_per_share_value",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Actual Earnings Per Share reported in the news release"
+ },
+ "actual_earnings_per_share_value_2_1555": {
+  "id": "actual_earnings_per_share_value_2_1555",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Actual Earnings Per Share value reported in the news"
+ },
+ "actual_earnings_per_share_value_afterhours": {
+  "id": "actual_earnings_per_share_value_afterhours",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "The actual Earnings Per Share (EPS) value reported and mentioned in the news rel"
+ },
+ "actual_eps_value": {
+  "id": "actual_eps_value",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Actual reported Earnings Per Share on Day 1"
+ },
+ "actual_eps_value_2": {
+  "id": "actual_eps_value_2",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "The actual Earnings Per Share value released in the news event"
+ },
+ "advantageous_position_flag": {
+  "id": "advantageous_position_flag",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Indicator of whether a long or short position would have been more favorable."
+ },
+ "advantageous_position_flag_pre_filter": {
+  "id": "advantageous_position_flag_pre_filter",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Indicator for whether a long (1), neutral (0), or short (-1) position would have"
+ },
+ "after_hours_vwap_2": {
+  "id": "after_hours_vwap_2",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Volume-Weighted Average Price after trade or post-market session on Day 1"
+ },
+ "after_hours_vwap_value": {
+  "id": "after_hours_vwap_value",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Post session volume weighted average price"
+ },
+ "after_session_vwap": {
+  "id": "after_session_vwap",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Volume weighted average price in the post-session"
+ },
+ "afterhours_volume_weighted_avg_price": {
+  "id": "afterhours_volume_weighted_avg_price",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Post-market Volume Weighted Average Price for the session"
+ },
+ "aggregate_session_vwap_2": {
+  "id": "aggregate_session_vwap_2",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Volume weighted average price for all sessions combined throughout the day"
+ },
+ "aggregate_sessions_vwap": {
+  "id": "aggregate_sessions_vwap",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Volume Weighted Average Price across all periods in the session"
+ },
+ "all_sessions_volume_weighted_avg_price": {
+  "id": "all_sessions_volume_weighted_avg_price",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Volume Weighted Average Price for all trades during the session"
+ },
+ "all_sessions_vwap": {
+  "id": "all_sessions_vwap",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Volume Weighted Average Price calculated over all trades within the event window"
+ },
+ "annual_dividend_percent": {
+  "id": "annual_dividend_percent",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield percentage for the stock"
+ },
+ "annual_dividend_percent_2_1555": {
+  "id": "annual_dividend_percent_2_1555",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield percentage (annual dividend divided by stock price)"
+ },
+ "annual_dividend_percent_of_share_price": {
+  "id": "annual_dividend_percent_of_share_price",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield percentage for Day 1 in the filter module"
+ },
+ "annual_dividend_yield": {
+  "id": "annual_dividend_yield",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield (annual dividend / stock price) for the security on Day 1"
+ },
+ "annual_dividend_yield_pct": {
+  "id": "annual_dividend_yield_pct",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield percentage for the stock in After Hours Day 1"
+ },
+ "annual_dividend_yield_pct_2": {
+  "id": "annual_dividend_yield_pct_2",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield ratio (annual dividend divided by stock price, in percentage)"
+ },
+ "annual_dividend_yield_percent": {
+  "id": "annual_dividend_yield_percent",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield percentage for the security on the session day"
+ },
+ "annual_dividend_yield_percent_2": {
+  "id": "annual_dividend_yield_percent_2",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield percentage for the stock on the event day during pre-market sessi"
+ },
+ "annual_dividend_yield_percent_3": {
+  "id": "annual_dividend_yield_percent_3",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Dividend yield percentage for the stock during the session"
+ },
+ "average_true_range_14_1555": {
+  "id": "average_true_range_14_1555",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Fourteen-day Average True Range, a volatility measure"
+ },
+ "average_true_range_14d": {
+  "id": "average_true_range_14d",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "14-period Average True Range (ATR) for the security on the event day, representi"
+ },
+ "average_true_range_14day": {
+  "id": "average_true_range_14day",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Fourteen day Average True Range"
+ },
+ "average_true_range_14day_3": {
+  "id": "average_true_range_14day_3",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Fourteen day Average True Range"
+ },
+ "average_true_range_14day_filter": {
+  "id": "average_true_range_14day_filter",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "The average true range of the stock over the past fourteen days, measuring volat"
+ },
+ "average_true_range_fourteen_periods": {
+  "id": "average_true_range_fourteen_periods",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Average True Range over the past 14 days for the security"
+ },
+ "best_position_indicator": {
+  "id": "best_position_indicator",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Long/Short indicator or signal for day 1 in 'All Filter' module"
+ },
+ "closing_session_volume_count": {
+  "id": "closing_session_volume_count",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Trading volume at main session close"
+ },
+ "closing_volume": {
+  "id": "closing_volume",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Trading volume at the close of the main session"
+ },
+ "current_day_traded_volume": {
+  "id": "current_day_traded_volume",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Current day's session trading volume"
+ },
+ "current_day_trading_volume": {
+  "id": "current_day_trading_volume",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Total trading volume during the current after-hours session on Day 1"
+ },
+ "current_day_trading_volume_2": {
+  "id": "current_day_trading_volume_2",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Current trading volume in filter module on Day 1"
+ },
+ "current_day_volume": {
+  "id": "current_day_volume",
+  "type": "VECTOR",
+  "dataset": "news12",
+  "desc": "Current trade volume for the security at the time of record/event within event d"
+ },
+ "anl4_ady_median": {
+  "id": "anl4_ady_median",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Median of estimations"
+ },
+ "anl4_ady_numest": {
+  "id": "anl4_ady_numest",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The number of forecasts counted in aggregation"
+ },
+ "anl4_ady_pu": {
+  "id": "anl4_ady_pu",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "The number of upper estimations"
+ },
+ "anl4_af_cfps_value": {
+  "id": "anl4_af_cfps_value",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Cash Flow Per Share - Actual Value"
+ },
+ "anl4_af_div_value": {
+  "id": "anl4_af_div_value",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Dividend - Actual value"
+ },
+ "anl4_af_eps_value": {
+  "id": "anl4_af_eps_value",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Earnings Per Share - Actual Value"
+ },
+ "anl4_afv4_actual": {
+  "id": "anl4_afv4_actual",
+  "type": "VECTOR",
+  "dataset": "analyst4",
+  "desc": "Announced financial data"
+ },
+ "anl4_afv4_cfps_high": {
+  "id": "anl4_afv4_cfps_high",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Cash Flow Per Share - The highest estimation for the annual forecast"
+ },
+ "anl4_afv4_cfps_low": {
+  "id": "anl4_afv4_cfps_low",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Cash Flow Per Share - The lowest estimation for the upcoming fiscal year"
+ },
+ "anl4_afv4_cfps_mean": {
+  "id": "anl4_afv4_cfps_mean",
+  "type": "MATRIX",
+  "dataset": "analyst4",
+  "desc": "Cash Flow Per Share - average of estimations for the annual frequency"
+ },
+ "beta_last_30_days_spy": {
+  "id": "beta_last_30_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The rolling beta value of the security relative to SPY, calculated via regressio"
+ },
+ "beta_last_360_days_spy": {
+  "id": "beta_last_360_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The rolling beta value of the security relative to SPY, calculated via regressio"
+ },
+ "beta_last_60_days_spy": {
+  "id": "beta_last_60_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The rolling beta value of the security relative to SPY, calculated via regressio"
+ },
+ "beta_last_90_days_spy": {
+  "id": "beta_last_90_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The rolling beta value of the security relative to SPY, calculated via regressio"
+ },
+ "correlation_last_30_days_spy": {
+  "id": "correlation_last_30_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The Pearson correlation coefficient of daily log returns between the security an"
+ },
+ "correlation_last_360_days_spy": {
+  "id": "correlation_last_360_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The Pearson correlation coefficient of daily log returns between the security an"
+ },
+ "correlation_last_60_days_spy": {
+  "id": "correlation_last_60_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The Pearson correlation coefficient of daily log returns between the security an"
+ },
+ "correlation_last_90_days_spy": {
+  "id": "correlation_last_90_days_spy",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The Pearson correlation coefficient of daily log returns between the security an"
+ },
+ "systematic_risk_last_30_days": {
+  "id": "systematic_risk_last_30_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of the security\u2019s return variance attributed to systematic (market) "
+ },
+ "systematic_risk_last_360_days": {
+  "id": "systematic_risk_last_360_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of the security\u2019s return variance attributed to systematic (market) "
+ },
+ "systematic_risk_last_60_days": {
+  "id": "systematic_risk_last_60_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of the security\u2019s return variance attributed to systematic (market) "
+ },
+ "systematic_risk_last_90_days": {
+  "id": "systematic_risk_last_90_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of the security\u2019s return variance attributed to systematic (market) "
+ },
+ "unsystematic_risk_last_30_days": {
+  "id": "unsystematic_risk_last_30_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of return variance not explained by SPY (idiosyncratic risk), calcul"
+ },
+ "unsystematic_risk_last_360_days": {
+  "id": "unsystematic_risk_last_360_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of return variance not explained by SPY (idiosyncratic risk), calcul"
+ },
+ "unsystematic_risk_last_60_days": {
+  "id": "unsystematic_risk_last_60_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of return variance not explained by SPY (idiosyncratic risk), calcul"
+ },
+ "unsystematic_risk_last_90_days": {
+  "id": "unsystematic_risk_last_90_days",
+  "type": "MATRIX",
+  "dataset": "model51",
+  "desc": "The portion of return variance not explained by SPY (idiosyncratic risk), calcul"
+ }
+}

@@ -64,3 +64,8 @@ build/
 *.zip
 
 QUANTAXIS
+
+# Autopilot miner (local only: results DB, logs, runtime status)
+autopilot/results.db*
+autopilot/*.log
+autopilot/daemon_status.json
