@@ -35,6 +35,14 @@ for _id in _CORE + _PV + _M16 + _M51:
 FIELD_IDS = FIELD_IDS[:55]
 
 REPO_ROOT = BASE.parent
+SEEDS = BASE / 'seeds_forum.md'
+
+
+def load_seeds():
+    try:
+        return open(SEEDS).read()[:3000]
+    except Exception:
+        return ''
 CRED = json.load(open(REPO_ROOT / 'credential.txt'))
 OCFG = json.load(open(Path.home() / '.config/opencode/opencode.json'))
 OCG = OCFG['provider']['opencode-go-mgr']
@@ -244,11 +252,13 @@ def gen_batch(history, submitted, temperature=0.85):
 BEST SO FAR: {best['expr'] + ' sharpe ' + str(best['sharpe']) if best else 'none'}
 ALREADY SUBMITTED (must be LOW-correlation vs these, self-corr limit 0.7):
 {sub_txt if submitted else 'none yet'}
-SELF-CORR LESSON: rank-preserving transforms (quantile/group_rank/SUBINDUSTRY-neut of the SAME signal) keep self-corr ~0.97-0.99 and FAIL. Only genuinely DIFFERENT signals (different families/fields) can pass alongside submitted. Combos sharing the value leg still fail (~0.73+).
+SELF-CORR LESSON: rank-preserving transforms (quantile/group_rank/SUBINDUSTRY-neut of the SAME signal) keep self-corr ~0.94-0.99 and FAIL. Combos sharing the value leg usually fail (~0.73+) UNLESS the other leg is strong and independent (overnight-gap+value PASSED at 2.33). Prefer pairing value leg with strong independent legs.
 STRONG NEGATIVES TO FLIP:
 {neg_txt if negs else 'none yet'}
 FITNESS: needs >1.0, rewards lower turnover/higher margin. Prefer decay 1-10, smoother windows.
 COMBO STRATEGY (highest ROI): add()/subtract() pairing a value winner (cashflow_op/EV) with a reversal winner (volume/returns/correlation flips). Also try SECTOR/MARKET neut on proven exprs.
+FORUM SEEDS (verified Alpha101/playbook patterns, prioritize variants of these):
+{load_seeds()}
 TOP RESULTS:
 {top}
 FAILURES TO AVOID:
